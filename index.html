@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#87CEEB">
+  <link rel="manifest" href="manifest.json">
+  <title>Bloop's World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="game">
+  <div id="sun"></div>
+  <div id="cloud1" class="cloud"></div>
+  <div id="cloud2" class="cloud"></div>
+  <div id="rainbow"></div>
+
+  <div id="bloop-wrap">
+    <div id="bloop">
+      <div id="bloop-body"></div>
+      <div class="bloop-cheek" id="cheek-l"></div>
+      <div class="bloop-cheek" id="cheek-r"></div>
+      <div class="bloop-eye" id="eye-l">
+        <div class="pupil" id="pupil-l"></div>
+      </div>
+      <div class="bloop-eye" id="eye-r">
+        <div class="pupil" id="pupil-r"></div>
+      </div>
+      <div id="bloop-mouth"></div>
+      <div id="bloop-belly"></div>
+      <div class="bloop-arm" id="arm-l"></div>
+      <div class="bloop-arm" id="arm-r"></div>
+    </div>
+  </div>
+
+  <div id="ground"></div>
+  <div id="combo-flash"></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

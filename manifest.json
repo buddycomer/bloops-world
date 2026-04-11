@@ -1,0 +1,9 @@
+{
+  "name": "Bloop's World",
+  "short_name": "Bloop",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#87CEEB",
+  "theme_color": "#87CEEB"
+}
