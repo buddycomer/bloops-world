@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#87CEEB">
+  <title>Volleyball!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="vb-page">
+
+  <!-- SKY & BEACH -->
+  <div id="vb-sky"></div>
+  <div id="vb-sand"></div>
+  <div id="vb-sun"></div>
+  <div id="vb-cloud"></div>
+
+  <!-- SCOREBOARD -->
+  <div id="vb-scoreboard">
+    <div id="vb-score-zane">0</div>
+    <div id="vb-score-label">— first to 10 —</div>
+    <div id="vb-score-kayleigh">0</div>
+  </div>
+
+  <!-- NET -->
+  <div id="vb-net">
+    <div id="vb-net-pole-top"></div>
+    <div id="vb-net-body"></div>
+    <div id="vb-net-pole-bot"></div>
+  </div>
+
+  <!-- BALL -->
+  <div id="vb-ball"></div>
+
+  <!-- ZANE (left) -->
+  <div id="vb-zane" class="vb-player">
+    <div class="vb-head">
+      <div class="vb-hair zane-hair"></div>
+      <div class="vb-eye vb-eye-l"></div>
+      <div class="vb-eye vb-eye-r"></div>
+      <div class="vb-smile"></div>
+    </div>
+    <div class="vb-body"></div>
+    <div class="vb-arm vb-arm-l" id="zane-arm-l"></div>
+    <div class="vb-arm vb-arm-r" id="zane-arm-r"></div>
+    <div class="vb-leg vb-leg-l"></div>
+    <div class="vb-leg vb-leg-r"></div>
+  </div>
+
+  <!-- KAYLEIGH (right) -->
+  <div id="vb-kayleigh" class="vb-player">
+    <div class="vb-head">
+      <div class="vb-hair kayleigh-hair"></div>
+      <div class="vb-eye vb-eye-l"></div>
+      <div class="vb-eye vb-eye-r"></div>
+      <div class="vb-smile"></div>
+    </div>
+    <div class="vb-body"></div>
+    <div class="vb-arm vb-arm-l" id="kayleigh-arm-l"></div>
+    <div class="vb-arm vb-arm-r" id="kayleigh-arm-r"></div>
+    <div class="vb-leg vb-leg-l"></div>
+    <div class="vb-leg vb-leg-r"></div>
+  </div>
+
+  <!-- QUIT -->
+  <button id="vb-quit">✕ Quit</button>
+
+  <!-- TAP ZONES -->
+  <div id="vb-tap-left"></div>
+  <div id="vb-tap-right"></div>
+
+  <!-- OVERLAYS -->
+  <div id="vb-fireworks"></div>
+  <div id="vb-celebration">
+    <div id="vb-celeb-text"></div>
+    <div id="vb-celeb-sub"></div>
+  </div>
+  <div id="vb-countdown"></div>
+
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

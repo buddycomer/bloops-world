@@ -1,4 +1,4 @@
-// ── MENU — Phase 3 ────────────────────────────────────────
+// ── MENU — Phase 4 ────────────────────────────────────────
 
 var menuBtn  = document.getElementById('menu-btn');
 var menuDrop = document.getElementById('menu-dropdown');
@@ -20,14 +20,18 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Dance Grid — now a real link
 document.getElementById('menu-dancegrid').addEventListener('click', function(e) {
   e.stopPropagation();
   closeMenu();
   window.location.href = 'minigames/dancegrid/index.html';
 });
 
-// Coming soon — do nothing
+document.getElementById('menu-volleyball').addEventListener('click', function(e) {
+  e.stopPropagation();
+  closeMenu();
+  window.location.href = 'minigames/volleyball/index.html';
+});
+
 document.querySelectorAll('.menu-item.coming-soon').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.stopPropagation();
