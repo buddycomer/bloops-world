@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>Dance Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="dg-page">
+
+  <button id="dg-quit">✕ Quit</button>
+
+  <div id="dg-header">
+    <div id="dg-title">Dance Grid!</div>
+    <div id="dg-round">Round 1</div>
+  </div>
+
+  <div id="dg-arena">
+
+    <!-- BLOOP'S SIDE -->
+    <div class="dg-player">
+      <div id="dg-bloop-avatar">
+        <div class="mb-body"></div>
+        <div class="mb-cheek mb-cheek-l"></div>
+        <div class="mb-cheek mb-cheek-r"></div>
+        <div class="mb-eye mb-eye-l"><div class="mb-pupil"></div></div>
+        <div class="mb-eye mb-eye-r"><div class="mb-pupil"></div></div>
+        <div class="mb-mouth"></div>
+        <div class="mb-belly"></div>
+      </div>
+      <div class="dg-label">Bloop</div>
+      <div class="dg-grid" id="dg-bloop-grid">
+        <div class="dg-cell" data-idx="0"></div>
+        <div class="dg-cell" data-idx="1"></div>
+        <div class="dg-cell" data-idx="2"></div>
+        <div class="dg-cell" data-idx="3"></div>
+        <div class="dg-cell" data-idx="4"></div>
+        <div class="dg-cell" data-idx="5"></div>
+        <div class="dg-cell" data-idx="6"></div>
+        <div class="dg-cell" data-idx="7"></div>
+        <div class="dg-cell" data-idx="8"></div>
+      </div>
+    </div>
+
+    <div id="dg-divider"></div>
+
+    <!-- ZANE'S SIDE -->
+    <div class="dg-player">
+      <div id="dg-zane-avatar">👦</div>
+      <div class="dg-label">Zane</div>
+      <div class="dg-grid" id="dg-zane-grid">
+        <div class="dg-cell" data-idx="0"></div>
+        <div class="dg-cell" data-idx="1"></div>
+        <div class="dg-cell" data-idx="2"></div>
+        <div class="dg-cell" data-idx="3"></div>
+        <div class="dg-cell" data-idx="4"></div>
+        <div class="dg-cell" data-idx="5"></div>
+        <div class="dg-cell" data-idx="6"></div>
+        <div class="dg-cell" data-idx="7"></div>
+        <div class="dg-cell" data-idx="8"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="dg-status">Get ready!</div>
+  <div id="dg-fireworks"></div>
+  <div id="dg-celebration"><div id="dg-celeb-text"></div></div>
+
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>

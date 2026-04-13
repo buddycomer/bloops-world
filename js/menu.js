@@ -1,6 +1,4 @@
-// ── MENU — Phase 2 ────────────────────────────────────────
-// Self contained. Touch and click safe.
-// Wire up real links in Phase 3+
+// ── MENU — Phase 3 ────────────────────────────────────────
 
 var menuBtn  = document.getElementById('menu-btn');
 var menuDrop = document.getElementById('menu-dropdown');
@@ -14,25 +12,22 @@ function closeMenu() {
   menuDrop.classList.remove('open');
 }
 
-// Open/close on button tap
 menuBtn.addEventListener('click', openMenu);
 
-// Close when tapping outside — use click not touchstart
 document.addEventListener('click', function(e) {
   if (!menuBtn.contains(e.target) && !menuDrop.contains(e.target)) {
     closeMenu();
   }
 });
 
-// Dance Grid — placeholder for now, real link added in Phase 3
+// Dance Grid — now a real link
 document.getElementById('menu-dancegrid').addEventListener('click', function(e) {
   e.stopPropagation();
   closeMenu();
-  // Phase 3: window.location.href = 'minigames/dancegrid/index.html';
-  alert('Dance Grid coming soon!');
+  window.location.href = 'minigames/dancegrid/index.html';
 });
 
-// Coming soon items — do nothing
+// Coming soon — do nothing
 document.querySelectorAll('.menu-item.coming-soon').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.stopPropagation();
