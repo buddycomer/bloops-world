@@ -178,13 +178,20 @@ function handleZaneTap(idx) {
 }
 
 // ── TOUCH & CLICK ON ZANE'S GRID ─────────────────────────
+// Use a flag to prevent touchstart AND click both firing on mobile
+var lastTouchTime = 0;
+
 zaneGrid.querySelectorAll('.dg-cell').forEach(function(cell) {
-  cell.addEventListener('click', function() {
-    handleZaneTap(parseInt(cell.dataset.idx));
-  });
   cell.addEventListener('touchstart', function(e) {
+    lastTouchTime = Date.now();
     handleZaneTap(parseInt(cell.dataset.idx));
   }, { passive: true });
+
+  cell.addEventListener('click', function() {
+    // If a touch just fired within 500ms, skip the click
+    if (Date.now() - lastTouchTime < 500) return;
+    handleZaneTap(parseInt(cell.dataset.idx));
+  });
 });
 
 // ── QUIT BUTTON ───────────────────────────────────────────
